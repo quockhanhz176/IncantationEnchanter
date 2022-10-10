@@ -43,6 +43,10 @@ namespace UnityEngine
         /// The Default Collider Type set when creating a new Rule.
         /// </summary>
         public Tile.ColliderType m_DefaultColliderType = Tile.ColliderType.Sprite;
+        /// <summary>
+        /// The Relative Tiles that can be used to apply the rule.
+        /// </summary>
+        public List<Tile> m_RelativeTiles;
 
         public virtual int m_RotationAngle => 90;
         public int m_RotationCount => 360 / m_RotationAngle;

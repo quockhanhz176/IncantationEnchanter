@@ -2,11 +2,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-  [SerializeField]
-  private float speed = 10.0f;
-
-  [SerializeField]
-  private Camera mainCamera;
+  public float speed = 10.0f;
+  public Camera mainCamera;
 
   private SpriteRenderer _spriteRenderer;
 

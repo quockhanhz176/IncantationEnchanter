@@ -9,6 +9,7 @@ public class Skill : MonoBehaviour
   public float speed;
   public GameObject projectilePrefab;
   private Animator _animator;
+  private Rigidbody2D _rigidbody2D;
 
   void Start()
   {
@@ -26,7 +27,13 @@ public class Skill : MonoBehaviour
   public void OnCollisionEnter2D(Collision2D collision)
   {
     // TODO: Add logic later
-    _animator.SetBool("IsHit", true);
-    Destroy(this, 1f);
+    if (collision.gameObject.tag == Tags.TAG_WALL)
+    {
+      // Run hit animation (if any)
+      _animator.SetBool("IsHit", true);
+
+      // Hit animation time
+      Destroy(gameObject, 0.25f);
+    }
   }
 }

@@ -151,7 +151,7 @@ MonoBehaviour:
   manaCost: 0
   castTime: 0
   range: 0
-  speed: 5
+  speed: 15
   projectilePrefab: {fileID: 110094254555955504}
 --- !u!50 &-1930873708070973336
 Rigidbody2D:
@@ -173,4 +173,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4

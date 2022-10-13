@@ -15,6 +15,7 @@ public class Skill : MonoBehaviour
   void Start()
   {
     _animator = GetComponent<Animator>();
+    _rigidbody2D = GetComponent<Rigidbody2D>();
   }
 
   public void castSkill(Transform firePoint)
@@ -39,6 +40,9 @@ public class Skill : MonoBehaviour
 
       // Hit animation time
       Destroy(gameObject, 0.25f);
+
+      _rigidbody2D.velocity = Vector2.zero;
+      _rigidbody2D.angularVelocity = 0f;
     }
   }
 }

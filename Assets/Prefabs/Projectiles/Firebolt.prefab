@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -8254437211540542197}
   - component: {fileID: 5641798472981269924}
   - component: {fileID: -1930873708070973336}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Firebolt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153,6 +153,7 @@ MonoBehaviour:
   range: 0
   speed: 15
   projectilePrefab: {fileID: 110094254555955504}
+  _firePointOffset: 0.5
 --- !u!50 &-1930873708070973336
 Rigidbody2D:
   serializedVersion: 4

@@ -8,6 +8,7 @@ public class Skill : MonoBehaviour
   public float range;
   public float speed;
   public GameObject projectilePrefab;
+  public float _firePointOffset = 0.5f;
   private Animator _animator;
   private Rigidbody2D _rigidbody2D;
 
@@ -19,7 +20,11 @@ public class Skill : MonoBehaviour
   public void castSkill(Transform firePoint)
   {
     var skillRotation = firePoint.rotation * Quaternion.Euler(0, 0, 90);
-    GameObject skill = Instantiate(projectilePrefab, firePoint.position, skillRotation);
+
+    var skillDirectionVector = (skillRotation * Vector3.forward).normalized;
+    var skillOffset = (new Vector3(skillDirectionVector.x, skillDirectionVector.y, 0) * _firePointOffset);
+
+    GameObject skill = Instantiate(projectilePrefab, firePoint.position + skillOffset, skillRotation);
 
     var skillRigidbody = skill.GetComponent<Rigidbody2D>();
     skillRigidbody.AddForce(firePoint.up * speed, ForceMode2D.Impulse);

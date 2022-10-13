@@ -2,13 +2,11 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-  [SerializeField]
-  private float speed = 10.0f;
-
-  [SerializeField]
-  private Camera mainCamera;
+  public float speed = 10.0f;
+  public Camera mainCamera;
 
   private SpriteRenderer _spriteRenderer;
+  private Animator _animator;
 
   private Vector3 _destination;
   private Vector2 _moveVector;
@@ -16,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
   void Start()
   {
     _spriteRenderer = GetComponent<SpriteRenderer>();
+    _animator = GetComponent<Animator>();
     _destination = this.transform.position;
   }
 
@@ -35,6 +34,8 @@ public class PlayerMovement : MonoBehaviour
       {
         _spriteRenderer.flipX = true;
       }
+
+      _animator.SetBool("IsRunning", true);
     }
   }
 
@@ -48,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
     {
       transform.position = new Vector3(_destination.x, _destination.y, 0);
       _moveVector = Vector2.zero;
+      _animator.SetBool("IsRunning", false);
     }
   }
 

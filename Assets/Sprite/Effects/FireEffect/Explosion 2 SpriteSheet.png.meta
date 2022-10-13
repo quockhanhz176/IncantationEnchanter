@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c6663a20301eb5644b5a603d032f431a
+guid: ed92c451c68fb2641af124749114ad69
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -44,7 +44,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: weapon_spritesheet_0
+      name: Explosion 2 SpriteSheet_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 187
-        width: 7
-        height: 13
+        x: 0
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a56c73d5d72d62d42afe50894975f5f1
-      internalID: 89128985
+      spriteID: 10529e797d67c204eab4e47d4207ce19
+      internalID: -46718680
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapon_spritesheet_1
+      name: Explosion 2 SpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 25
-        y: 171
-        width: 11
-        height: 21
+        x: 48
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,20 +151,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 090b6853172bf3040a20704e839cab91
-      internalID: 1003313553
+      spriteID: 47fe36e9c5ff0324f8d52045b574b854
+      internalID: -1854458064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapon_spritesheet_2
+      name: Explosion 2 SpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 41
-        y: 171
-        width: 11
-        height: 21
+        x: 96
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +172,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad163e6831ef33e4dba3c785c32831db
-      internalID: -729535412
+      spriteID: 5bc29740c8dda794389db6f8185dd7f6
+      internalID: -1460699181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapon_spritesheet_3
+      name: Explosion 2 SpriteSheet_3
       rect:
         serializedVersion: 2
-        x: 57
-        y: 171
-        width: 11
-        height: 21
+        x: 144
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43d8d3a34394ded4a90a448eb9ff358e
-      internalID: 1798808537
+      spriteID: 93b1dd2889fbba148b81244df29f446a
+      internalID: 1670143426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapon_spritesheet_4
+      name: Explosion 2 SpriteSheet_4
       rect:
         serializedVersion: 2
-        x: 9
-        y: 139
-        width: 11
-        height: 37
+        x: 192
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,20 +214,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c90665fa9df9e0b4e80680ed8e4ff109
-      internalID: -1085356837
+      spriteID: b4c9dbb4ed0b03e4886e878031ad7231
+      internalID: 1266482114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapon_spritesheet_5
+      name: Explosion 2 SpriteSheet_5
       rect:
         serializedVersion: 2
-        x: 25
-        y: 139
-        width: 11
-        height: 24
+        x: 240
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,20 +235,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed28dfd314d91f549b5eed6d3160a112
-      internalID: 503626217
+      spriteID: 5b3d74dc640881441b86d8215f9949d2
+      internalID: 756849543
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapon_spritesheet_6
+      name: Explosion 2 SpriteSheet_6
       rect:
         serializedVersion: 2
-        x: 41
-        y: 139
-        width: 11
-        height: 22
+        x: 288
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,20 +256,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41972c0cf8260cd418781ddae01f1829
-      internalID: 1808211640
+      spriteID: 0b0f226a17dc2f94191834bcded61621
+      internalID: -276739071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapon_spritesheet_7
+      name: Explosion 2 SpriteSheet_7
       rect:
         serializedVersion: 2
-        x: 57
-        y: 139
-        width: 11
-        height: 24
+        x: 336
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -277,20 +277,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41b17bd508ef68e43b5291f1f37b0739
-      internalID: -758060828
+      spriteID: 168fe00caa684c84ba502e62eb519b25
+      internalID: -771999026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapon_spritesheet_8
+      name: Explosion 2 SpriteSheet_8
       rect:
         serializedVersion: 2
-        x: 11
-        y: 107
-        width: 7
-        height: 29
+        x: 384
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -298,20 +298,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 226e0dd3efa85b24793156a15cb63cc3
-      internalID: 1942548930
+      spriteID: be7f091032db10f4285631d11ea59295
+      internalID: -1083285209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapon_spritesheet_9
+      name: Explosion 2 SpriteSheet_9
       rect:
         serializedVersion: 2
-        x: 25
-        y: 107
-        width: 11
-        height: 25
+        x: 432
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -319,20 +319,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19d1470cd810aba478f2cb5c0773e9c9
-      internalID: -2097791397
+      spriteID: d886d0220877f6b48b3897df451f70b0
+      internalID: -543765091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapon_spritesheet_10
+      name: Explosion 2 SpriteSheet_10
       rect:
         serializedVersion: 2
-        x: 40
-        y: 107
-        width: 13
-        height: 30
+        x: 480
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -340,20 +340,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f44a285a08c880479567f6e273fdfdc
-      internalID: 2049136378
+      spriteID: ec769c13dea0a8e4996825670e57efa6
+      internalID: -810887954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapon_spritesheet_11
+      name: Explosion 2 SpriteSheet_11
       rect:
         serializedVersion: 2
-        x: 59
-        y: 107
-        width: 10
-        height: 21
+        x: 528
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -361,20 +361,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d0a200fc5ebe5645a1cece04cb7c9fd
-      internalID: 2122769880
+      spriteID: 093f70e8d7bf38e4cb3a521ccfed487f
+      internalID: -886374259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapon_spritesheet_12
+      name: Explosion 2 SpriteSheet_12
       rect:
         serializedVersion: 2
-        x: 12
-        y: 75
-        width: 6
-        height: 22
+        x: 576
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -382,20 +382,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25e46d4bc090c4b44b770ec95d6814e1
-      internalID: -383201721
+      spriteID: 50b62ea8dee5f5d4ca33bfe9a8914d1e
+      internalID: -1368699942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapon_spritesheet_13
+      name: Explosion 2 SpriteSheet_13
       rect:
         serializedVersion: 2
-        x: 28
-        y: 75
-        width: 9
-        height: 19
+        x: 624
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -403,20 +403,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da7c0e1170aa92c49b81fccb563be831
-      internalID: 650964198
+      spriteID: c128f99c84bb0a84aabfc36669f70a4e
+      internalID: 194350832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapon_spritesheet_14
+      name: Explosion 2 SpriteSheet_14
       rect:
         serializedVersion: 2
-        x: 43
-        y: 75
-        width: 10
-        height: 30
+        x: 672
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -424,20 +424,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6e0c364696e87d41bba0c262acf65f2
-      internalID: 1220286488
+      spriteID: 47b57412b7e185741a1a58bccd3062d8
+      internalID: 1181165398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapon_spritesheet_15
+      name: Explosion 2 SpriteSheet_15
       rect:
         serializedVersion: 2
-        x: 57
-        y: 75
-        width: 11
-        height: 29
+        x: 720
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -445,20 +445,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41620699b85454c4b9b9c05ef1af15df
-      internalID: 1450243175
+      spriteID: 8f21fbfd1d941384caf023dd8dd8609b
+      internalID: -1459669603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapon_spritesheet_16
+      name: Explosion 2 SpriteSheet_16
       rect:
         serializedVersion: 2
-        x: 9
-        y: 43
-        width: 11
-        height: 22
+        x: 768
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -466,20 +466,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a9d6c12b78189f4d839f21398ba3b2c
-      internalID: -1357356070
+      spriteID: b7c37fcb4db7bf24b94727d45b4ecbc7
+      internalID: -652020399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapon_spritesheet_17
+      name: Explosion 2 SpriteSheet_17
       rect:
         serializedVersion: 2
-        x: 25
-        y: 43
-        width: 11
-        height: 30
+        x: 816
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -487,113 +487,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfac24c06748c73448a2802c7911322b
-      internalID: 195743210
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: weapon_spritesheet_18
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 43
-        width: 9
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a67a1100b883a04fa22378d1dd8bc6b
-      internalID: 1375325090
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: weapon_spritesheet_19
-      rect:
-        serializedVersion: 2
-        x: 58
-        y: 43
-        width: 9
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e87449e33c7ea049b80c3a5fb078de1
-      internalID: -1208106036
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: weapon_spritesheet_20
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 11
-        width: 7
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50a53aeb11a82e2498854db8410fe82a
-      internalID: 1726079953
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: weapon_spritesheet_21
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 11
-        width: 8
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c9b569424d59f644990a287e0b6e5850
-      internalID: -1306179203
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: weapon_spritesheet_22
-      rect:
-        serializedVersion: 2
-        x: 43
-        y: 13
-        width: 8
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 500923a649dcda440a924e9b46bdb33a
-      internalID: 2006982745
+      spriteID: 78045906b0d86b14a935b719c68fdd8d
+      internalID: 1774955886
       vertices: []
       indices: 
       edges: []
@@ -609,29 +504,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      weapon_spritesheet_7: -758060828
-      weapon_spritesheet_11: 2122769880
-      weapon_spritesheet_10: 2049136378
-      weapon_spritesheet_14: 1220286488
-      weapon_spritesheet_15: 1450243175
-      weapon_spritesheet_2: -729535412
-      weapon_spritesheet_22: 2006982745
-      weapon_spritesheet_6: 1808211640
-      weapon_spritesheet_5: 503626217
-      weapon_spritesheet_9: -2097791397
-      weapon_spritesheet_17: 195743210
-      weapon_spritesheet_19: -1208106036
-      weapon_spritesheet_8: 1942548930
-      weapon_spritesheet_3: 1798808537
-      weapon_spritesheet_4: -1085356837
-      weapon_spritesheet_16: -1357356070
-      weapon_spritesheet_13: 650964198
-      weapon_spritesheet_1: 1003313553
-      weapon_spritesheet_12: -383201721
-      weapon_spritesheet_18: 1375325090
-      weapon_spritesheet_21: -1306179203
-      weapon_spritesheet_0: 89128985
-      weapon_spritesheet_20: 1726079953
+      Explosion 2 SpriteSheet_7: -771999026
+      Explosion 2 SpriteSheet_3: 1670143426
+      Explosion 2 SpriteSheet_1: -1854458064
+      Explosion 2 SpriteSheet_2: -1460699181
+      Explosion 2 SpriteSheet_4: 1266482114
+      Explosion 2 SpriteSheet_5: 756849543
+      Explosion 2 SpriteSheet_14: 1181165398
+      Explosion 2 SpriteSheet_9: -543765091
+      Explosion 2 SpriteSheet_15: -1459669603
+      Explosion 2 SpriteSheet_12: -1368699942
+      Explosion 2 SpriteSheet_17: 1774955886
+      Explosion 2 SpriteSheet_13: 194350832
+      Explosion 2 SpriteSheet_10: -810887954
+      Explosion 2 SpriteSheet_16: -652020399
+      Explosion 2 SpriteSheet_11: -886374259
+      Explosion 2 SpriteSheet_8: -1083285209
+      Explosion 2 SpriteSheet_0: -46718680
+      Explosion 2 SpriteSheet_6: -276739071
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

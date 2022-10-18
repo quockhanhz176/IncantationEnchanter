@@ -39,7 +39,7 @@ public class Skill : MonoBehaviour
       _animator.SetBool("IsHit", true);
 
       // Hit animation time
-      Destroy(gameObject, 0.25f);
+      Destroy(gameObject, 0.20f);
 
       _rigidbody2D.velocity = Vector2.zero;
       _rigidbody2D.angularVelocity = 0f;

@@ -12,7 +12,7 @@ public class WandController : MonoBehaviour
     mousePosition = (Vector2)getMousePosition();
 
     var playerPos = player.transform.position;
-    transform.position = new Vector3(playerPos.x + 0.15f, playerPos.y - 0.25f, 0);
+    transform.position = new Vector3(playerPos.x + 0.15f, playerPos.y - 0.15f, 0);
   }
   void FixedUpdate()
   {

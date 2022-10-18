@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5641798472981269924}
   - component: {fileID: -1930873708070973336}
   - component: {fileID: 1672268069636220101}
+  - component: {fileID: 4161060107862114306}
   m_Layer: 10
   m_Name: Firebolt
   m_TagString: Untagged
@@ -165,3 +166,21 @@ CapsuleCollider2D:
   m_Offset: {x: 0.179359, y: 0.003092201}
   m_Size: {x: 0.07180769, y: 0.03590572}
   m_Direction: 1
+--- !u!114 &4161060107862114306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110094254555955504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19e7699369689b5408b6a0a1a58c347b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teamId: 0
+  damageAmount: 1
+  destroyAfterDamage: 0
+  dealDamageOnTriggerEnter: 1
+  dealDamageOnTriggerStay: 0
+  dealDamageOnCollision: 1

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -3606760200466455997}
   - component: {fileID: -3749423359683310206}
   - component: {fileID: 237203119394413407}
+  - component: {fileID: -8689464827948140101}
   m_Layer: 10
   m_Name: Thunderbolt
   m_TagString: Untagged
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 2034432406, guid: 9fffc83c8b500ae4f8fb0351b0e2a496, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -125,7 +126,7 @@ MonoBehaviour:
   manaCost: 0
   castTime: 0
   range: 0
-  speed: 20
+  speed: 15
   projectilePrefab: {fileID: 3554713403883952034}
   _firePointOffset: 0.5
 --- !u!50 &-3749423359683310206
@@ -148,7 +149,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &237203119394413407
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -165,3 +166,21 @@ CapsuleCollider2D:
   m_Offset: {x: 0.045655355, y: 0.0060873046}
   m_Size: {x: 0.13940893, y: 0.027806846}
   m_Direction: 1
+--- !u!114 &-8689464827948140101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3554713403883952034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19e7699369689b5408b6a0a1a58c347b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teamId: 0
+  damageAmount: 1
+  destroyAfterDamage: 0
+  dealDamageOnTriggerEnter: 1
+  dealDamageOnTriggerStay: 0
+  dealDamageOnCollision: 1

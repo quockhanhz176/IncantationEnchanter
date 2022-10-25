@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7844559747009736950}
   - component: {fileID: 6880655507093760208}
   - component: {fileID: 7177363913536912197}
+  - component: {fileID: -2546437976664725199}
   m_Layer: 10
   m_Name: Icicle
   m_TagString: Untagged
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1417924486, guid: 6e6ad60d7e44963478c3e7310a659d3a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -165,3 +166,21 @@ CapsuleCollider2D:
   m_Offset: {x: 0.013023489, y: -0.008287958}
   m_Size: {x: 0.2029555, y: 0.046674203}
   m_Direction: 1
+--- !u!114 &-2546437976664725199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6064123459792532110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19e7699369689b5408b6a0a1a58c347b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teamId: 0
+  damageAmount: 1
+  destroyAfterDamage: 0
+  dealDamageOnTriggerEnter: 1
+  dealDamageOnTriggerStay: 0
+  dealDamageOnCollision: 1

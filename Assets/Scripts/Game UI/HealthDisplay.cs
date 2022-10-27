@@ -37,7 +37,6 @@ public class HealthDisplay : MonoBehaviour
                 {
                     for (int i = 0; i < currentHealth - _previousHealth; i++)
                     {
-                        Debug.Log("Adding health");
                         Instantiate(HealthIcon, transform);
                     }
                 }

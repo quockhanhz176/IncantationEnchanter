@@ -14,8 +14,11 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 _rightScale;
     private Vector3 _leftScale;
 
+    private GameManager _gameManager;
+
     void Start()
     {
+        _gameManager = GameManager.Instance;
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _animator = GetComponent<Animator>();
         _destination = this.transform.position;
@@ -42,6 +45,14 @@ public class PlayerMovement : MonoBehaviour
             }
 
             _animator.SetBool("IsRunning", true);
+        }
+
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            if(_gameManager != null)
+            {
+                _gameManager.TryOpenDoor();
+            }
         }
     }
 

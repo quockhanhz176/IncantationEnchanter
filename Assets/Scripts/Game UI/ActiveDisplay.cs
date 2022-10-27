@@ -28,8 +28,8 @@ public class ActiveDisplay : MonoBehaviour
             Debug.Log("Can open door: " + currentCanOpenDoor);
             if (currentCanOpenDoor)
             {
-                Instantiate(OpenDoorSymbol, transform);
                 Instantiate(OpenDoorButtonSymbol, transform);
+                Instantiate(OpenDoorSymbol, transform);
             }
             else
             {

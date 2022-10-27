@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 1604282296}
   - component: {fileID: 1604282297}
   - component: {fileID: 1604282298}
-  - component: {fileID: 1604282303}
   m_Layer: 7
   m_Name: orc
   m_TagString: Untagged
@@ -245,17 +244,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 0}
---- !u!114 &1604282303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 990727427744728943}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b506e26b08186f4bb192dc889dadad5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UsingDirectionalSetting: 0
-  IsLookingRight: 0

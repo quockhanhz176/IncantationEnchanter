@@ -15,12 +15,15 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 difference = (Vector2)player.transform.position - (Vector2)transform.position;
-        if (difference.magnitude > FreedomParameter)
+        if(player != null)
         {
-            //var z = transform.position.z;
-            //transform.position = (Vector2)player.transform.position - difference.normalized * FreedomParameter;
-            ShiftXY(player.transform.position, -difference.normalized * FreedomParameter);
+            Vector2 difference = (Vector2)player.transform.position - (Vector2)transform.position;
+            if (difference.magnitude > FreedomParameter)
+            {
+                //var z = transform.position.z;
+                //transform.position = (Vector2)player.transform.position - difference.normalized * FreedomParameter;
+                ShiftXY(player.transform.position, -difference.normalized * FreedomParameter);
+            }
         }
     }
 

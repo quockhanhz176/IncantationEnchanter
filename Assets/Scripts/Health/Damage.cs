@@ -22,6 +22,8 @@ public class Damage : MonoBehaviour
     public bool dealDamageOnTriggerStay = false;
     [Tooltip("Whether or not to apply damage on non-trigger collider collisions")]
     public bool dealDamageOnCollision = false;
+    [Tooltip("Whether or not to apply damage on collider collision stays")]
+    public bool dealDamageOnCollisionStay = false;
 
     /// <summary>
     /// Description:
@@ -69,6 +71,15 @@ public class Damage : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (dealDamageOnCollision)
+        {
+            DealDamage(collision.gameObject);
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+
+    {
+        if (dealDamageOnCollisionStay)
         {
             DealDamage(collision.gameObject);
         }

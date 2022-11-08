@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 1604282296}
   - component: {fileID: 1604282297}
   - component: {fileID: 1604282298}
+  - component: {fileID: 1604282295}
+  - component: {fileID: 1604282303}
   m_Layer: 7
   m_Name: orc
   m_TagString: Untagged
@@ -158,7 +160,7 @@ MonoBehaviour:
   maximumLives: 5
   respawnWaitTime: 3
   isInvincible: 0
-  deathEffect: {fileID: 0}
+  deathEffect: {fileID: 1981032876086837393, guid: b5ca99a51522e0d4da411b52369277da, type: 3}
   hitEffect: {fileID: 0}
 --- !u!114 &1604282296
 MonoBehaviour:
@@ -244,3 +246,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 0}
+--- !u!114 &1604282295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990727427744728943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15b8a28251cce2f49a48db85bed9eadc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UsingDirectionalSetting: 0
+  IsLookingRight: 1
+--- !u!114 &1604282303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990727427744728943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19e7699369689b5408b6a0a1a58c347b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teamId: 1
+  damageAmount: 1
+  destroyAfterDamage: 0
+  dealDamageOnTriggerEnter: 1
+  dealDamageOnTriggerStay: 1
+  dealDamageOnCollision: 1
+  dealDamageOnCollisionStay: 1

@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject Player;
 
+    public GameObject Wand;
+
     public Tilemap WallTileMap;
 
     public Tile ClosedDoorTile;
@@ -94,6 +96,9 @@ public class GameManager : MonoBehaviour
     }
     private Vector3Int? FindDoor()
     {
+        if (Player == null)
+            return null;
+
         var location = WallTileMap.WorldToCell(Player.transform.position);
         foreach (var shift in _searchArea)
         {

@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
 
     private GameManager _gameManager;
 
+    private Player _player;
+
     void Start()
     {
         _gameManager = GameManager.Instance;
@@ -24,10 +26,16 @@ public class PlayerMovement : MonoBehaviour
         _destination = this.transform.position;
         _rightScale = transform.localScale;
         _leftScale = new Vector3(-_rightScale.x, _rightScale.y, _rightScale.z);
+        _player = _gameManager.Player.GetComponent<Player>();
     }
 
     void Update()
     {
+        if (_player.IsFrozen)
+        {
+            return;
+        }
+
         if (Input.GetMouseButtonDown(1))
         {
             _destination = getMousePosition();
@@ -58,6 +66,11 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (_player.IsFrozen)
+        {
+            return;
+        }
+
         if (Vector2.Distance((Vector2)_destination, (Vector2)transform.position) > 0.1f)
         {
             _moveVector = ((Vector2)(_destination - transform.position)).normalized;

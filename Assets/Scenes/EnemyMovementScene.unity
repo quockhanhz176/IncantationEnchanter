@@ -10570,7 +10570,7 @@ MonoBehaviour:
   WallTileMap: {fileID: 3929403685111932854}
   ClosedDoorTile: {fileID: 11400000, guid: 0f6abfd9585ea494c863eab85cd17493, type: 2}
   OpenedDoorTile: {fileID: 11400000, guid: bcbc61306ecfcea4fa8f23451b462407, type: 2}
-  MenuManager: {fileID: 0}
+  MenuManager: {fileID: 1745554759}
 --- !u!1001 &1604282293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10779,9 +10779,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f51c8b8fd418d74e8ec0088c79f1800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameMenu: {fileID: 0}
-  DefeatMenu: {fileID: 0}
-  VictoryMenu: {fileID: 0}
+  PauseMenu: {fileID: 1019625801}
+  DefeatMenu: {fileID: 123480276}
+  VictoryMenu: {fileID: 1557756249}
 --- !u!4 &1745554760
 Transform:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    public GameObject GameMenu;
+    public GameObject PauseMenu;
 
     public GameObject DefeatMenu;
 
@@ -22,7 +22,7 @@ public class MenuManager : MonoBehaviour
 
     public void TogglePause(bool value)
     {
-        GameMenu?.SetActive(value);
+        PauseMenu?.SetActive(value);
     }
 
     public void ShowDefeat()

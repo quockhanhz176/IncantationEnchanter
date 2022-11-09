@@ -48,7 +48,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 1.2978837
 --- !u!114 &9017120477589723156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,9 +213,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teamId: 1
-  defaultHealth: 2
-  maximumHealth: 2
-  currentHealth: 2
+  defaultHealth: 3
+  maximumHealth: 3
+  currentHealth: 3
   invincibilityTime: 0
   useLives: 0
   currentLives: 3
@@ -240,7 +240,7 @@ MonoBehaviour:
   radius: 0.12
   height: 2
   canMove: 0
-  maxSpeed: 2.5
+  maxSpeed: 3
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2

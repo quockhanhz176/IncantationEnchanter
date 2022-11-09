@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
 
     public void Start()
     {
+        Time.timeScale = 1;
         _playerHealth = Player?.GetComponent<Health>();
     }
 
@@ -135,6 +136,12 @@ public class GameManager : MonoBehaviour
             MenuManager.TogglePause(true);
         }
     }
+    public void Win()
+    {
+        Time.timeScale = 0;
+        MenuManager.ShowVictory();
+    }
+
     private Vector3Int? FindDoor()
     {
         if (Player == null)

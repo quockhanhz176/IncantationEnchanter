@@ -167,6 +167,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f51c8b8fd418d74e8ec0088c79f1800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PauseMenu: {fileID: 0}
+  DefeatMenu: {fileID: 0}
+  VictoryMenu: {fileID: 0}
 --- !u!1 &168009874
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,7 +958,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: EnemyMovementScene
+          m_StringArgument: Level 1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!224 &498871272
@@ -1163,7 +1166,7 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "Developer:\nMinh, Khanh\n\nArt & animation:\nPaperHatLizard, pimen,  0x72,
-    \n@SonreirAngel_, Dream Mix"
+    \n@SonreirAngel_, Dream Mix,\nCodeManu"
 --- !u!222 &687267979
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -1,50 +1,52 @@
 using UnityEngine;
 using System.Collections;
+using System;
+
 public class Skill : MonoBehaviour
 {
-  public string description;
-  public int damage;
-  public int manaCost;
-  public float castTime;
-  public float range;
-  public float speed;
-  public GameObject projectilePrefab;
-  public float _firePointOffset = 0.5f;
-  private Animator _animator;
-  private Rigidbody2D _rigidbody2D;
+    public string description;
+    public int manaCost;
+    public float castTime;
+    public float coolDown;
+    public float range;
+    public float speed;
+    public int projectTileCount = 1;
+    public int spreadDegree;
+    public GameObject projectilePrefab;
+    public float _firePointOffset = 0.5f;
 
-  void Start()
-  {
-    _animator = GetComponent<Animator>();
-    _rigidbody2D = GetComponent<Rigidbody2D>();
+    private float _nextAvailableTime = -1;
 
-    StartCoroutine(DestroyProjectile(range, gameObject));
-  }
+    public void castSkill(Transform firePoint)
+    {
+        if (Time.time < _nextAvailableTime)
+        {
+            Debug.Log($"Time: {Time.time}, next: {_nextAvailableTime}");
+            return;
+        }
 
-  public void castSkill(Transform firePoint)
-  {
-    var skillRotation = firePoint.rotation * Quaternion.Euler(0, 0, 90);
+        if (spreadDegree == 0)
+        {
+            spreadDegree = 1;
+        }
 
-    var skillDirectionVector = (skillRotation * Vector3.forward).normalized;
-    var skillOffset = (new Vector3(skillDirectionVector.x, skillDirectionVector.y, 0) * _firePointOffset);
+        _nextAvailableTime = Time.time + coolDown;
+        float totalSpread = Math.Abs(spreadDegree) * (projectTileCount - 1);
+        Debug.Log($"Total spread: {totalSpread}");
+        for (var degree = -totalSpread / 2; degree <= totalSpread / 2; degree += spreadDegree)
+        {
+            Debug.Log($"Shooting, {degree}");
+            var skillRotation = firePoint.rotation * Quaternion.Euler(0, 0, 90 + degree);
 
-    GameObject skill = Instantiate(projectilePrefab, firePoint.position + skillOffset, skillRotation);
+            var skillDirectionVector = (skillRotation * Vector3.forward).normalized;
+            var skillOffset = (new Vector3(skillDirectionVector.x, skillDirectionVector.y, 0) * _firePointOffset);
 
-    var skillRigidbody = skill.GetComponent<Rigidbody2D>();
-    skillRigidbody.AddForce(firePoint.up * speed, ForceMode2D.Impulse);
-  }
-  public void OnCollisionEnter2D(Collision2D collision)
-  {
-    // Run hit animation (if any)
-    StartCoroutine(DestroyProjectile(0, gameObject));
-  }
+            GameObject skill = Instantiate(projectilePrefab, firePoint.position + skillOffset, skillRotation);
 
-  public virtual IEnumerator DestroyProjectile(float range, GameObject gameObject)
-  {
-    yield return new WaitForSeconds(range);
-    _rigidbody2D.velocity = Vector2.zero;
-    _rigidbody2D.angularVelocity = 0f;
-    _animator.SetBool("IsHit", true);
-    Destroy(gameObject, 0.2f);
-  }
+            var projectileDamage = skill.GetComponent<Projectile>();
+            projectileDamage?.SetDestroyAfter(range / speed);
+            var skillRigidbody = skill.GetComponent<Rigidbody2D>();
+            skillRigidbody?.AddForce(Quaternion.Euler(0, 0, degree) * firePoint.up * speed, ForceMode2D.Impulse);
+        }
+    }
 }

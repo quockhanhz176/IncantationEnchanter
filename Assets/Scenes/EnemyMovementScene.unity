@@ -10582,6 +10582,18 @@ PrefabInstance:
       propertyPath: deathEffect
       value: 
       objectReference: {fileID: 1981032876086837393, guid: b5ca99a51522e0d4da411b52369277da, type: 3}
+    - target: {fileID: 1035997933, guid: a11125219c658944888471b7dd34d0f1, type: 3}
+      propertyPath: currentHealth
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1035997933, guid: a11125219c658944888471b7dd34d0f1, type: 3}
+      propertyPath: defaultHealth
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1035997933, guid: a11125219c658944888471b7dd34d0f1, type: 3}
+      propertyPath: maximumHealth
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1035997934, guid: a11125219c658944888471b7dd34d0f1, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -11326,6 +11338,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ice Zombie
       objectReference: {fileID: 0}
+    - target: {fileID: 6521898264706884252, guid: 7eea61fad585d1847b218fff5dd48eb4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6521898264706884253, guid: 7eea61fad585d1847b218fff5dd48eb4, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -11767,17 +11783,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1422550137}
     - target: {fileID: 1300019643, guid: 85e7afd910e240e43a022d0d4fa83100, type: 3}
+      propertyPath: skill1
+      value: 
+      objectReference: {fileID: 935772981513712637, guid: c1bca5b075bbad34fa65234e6afffe6d, type: 3}
+    - target: {fileID: 1300019643, guid: 85e7afd910e240e43a022d0d4fa83100, type: 3}
       propertyPath: skill2
       value: 
-      objectReference: {fileID: 7844559747009736950, guid: a0b09fbf4be62264e915327f15b35be5, type: 3}
+      objectReference: {fileID: 935772981513712637, guid: eb4a1a907ffc0af4dacd96a22684e69d, type: 3}
     - target: {fileID: 1300019643, guid: 85e7afd910e240e43a022d0d4fa83100, type: 3}
       propertyPath: skill3
       value: 
-      objectReference: {fileID: -3606760200466455997, guid: db04c4fc6d01db34a969463952bb9bcd, type: 3}
+      objectReference: {fileID: 935772981513712637, guid: e8850e32a0fbd774a95f23861c16413d, type: 3}
     - target: {fileID: 1300019643, guid: 85e7afd910e240e43a022d0d4fa83100, type: 3}
       propertyPath: skill4
       value: 
-      objectReference: {fileID: 835470395295990716, guid: 90fef0762ac340b41bc81bc344cda77e, type: 3}
+      objectReference: {fileID: 935772981513712637, guid: 24ac75ff6c335164ba52516015ed91eb, type: 3}
     - target: {fileID: 1422550135, guid: 85e7afd910e240e43a022d0d4fa83100, type: 3}
       propertyPath: mainCamera
       value: 
@@ -11790,6 +11810,26 @@ PrefabInstance:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 1185683806539391318, guid: 85e7afd910e240e43a022d0d4fa83100, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1185683806539391318, guid: 85e7afd910e240e43a022d0d4fa83100, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1185683806539391318, guid: 85e7afd910e240e43a022d0d4fa83100, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1185683806539391318, guid: 85e7afd910e240e43a022d0d4fa83100, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1185683806539391318, guid: 85e7afd910e240e43a022d0d4fa83100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1185683806539391319, guid: 85e7afd910e240e43a022d0d4fa83100, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -12394,6 +12434,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5763815772775885631, guid: fa8f3b32aad69114a9559821520a8815, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1528332482, guid: a2ae487aef8f62341a93cd020bba3ea5, type: 3}
     - target: {fileID: 5763815772775885631, guid: fa8f3b32aad69114a9559821520a8815, type: 3}
       propertyPath: m_SortingOrder
       value: -2

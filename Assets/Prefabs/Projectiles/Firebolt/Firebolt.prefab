@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 110094254555955469}
   - component: {fileID: 110094254555955506}
   - component: {fileID: 110094254555955507}
-  - component: {fileID: 835470395295990716}
   - component: {fileID: -1930873708070973336}
   - component: {fileID: 1672268069636220101}
+  - component: {fileID: 1954628533}
   m_Layer: 10
-  m_Name: Teleport
+  m_Name: Firebolt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 110094254555955504}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1, z: 2}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -108,26 +108,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &835470395295990716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 110094254555955504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8deff81f98020b24eaced7bb396120fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  description: 
-  damage: 0
-  manaCost: 0
-  castTime: 0
-  range: 0.25
-  speed: 15
-  projectilePrefab: {fileID: 110094254555955504}
-  _firePointOffset: 0.5
 --- !u!50 &-1930873708070973336
 Rigidbody2D:
   serializedVersion: 4
@@ -165,3 +145,23 @@ CapsuleCollider2D:
   m_Offset: {x: 0.179359, y: 0.003092201}
   m_Size: {x: 0.07180769, y: 0.03590572}
   m_Direction: 1
+--- !u!114 &1954628533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110094254555955504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07895687ffcfb4942a9fa63413b5ce46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teamId: 0
+  damageAmount: 1
+  destroyAfterDamage: 1
+  dealDamageOnTriggerEnter: 1
+  dealDamageOnTriggerStay: 1
+  dealDamageOnCollision: 1
+  dealDamageOnCollisionStay: 1
+  destroyEffect: {fileID: 6054560675902486361, guid: 878404c412914254690765a7e105f069, type: 3}

@@ -18,6 +18,14 @@ public class GameManager : MonoBehaviour
 
     public Tile OpenedDoorTile;
 
+    public MenuManager MenuManager;
+
+    private Health _playerHealth;
+
+    private bool _pauseState = false;
+
+    private bool _isGameConcluded = false;
+
     private List<Vector2Int> _searchArea = new List<Vector2Int>
     {
         new Vector2Int(-1, -1),
@@ -29,6 +37,24 @@ public class GameManager : MonoBehaviour
     };
 
     private Dictionary<Item, int> _itemDictionary = new Dictionary<Item, int>();
+
+    public void Start()
+    {
+        _playerHealth = Player?.GetComponent<Health>();
+    }
+
+    public void Update()
+    {
+        if (_playerHealth.currentHealth <= 0)
+        {
+            _isGameConcluded = true;
+            MenuManager.ShowDefeat();
+        }
+        else if (!_isGameConcluded && Input.GetKeyDown(KeyCode.Escape))
+        {
+            TooglePause();
+        }
+    }
 
     private void Awake()
     {
@@ -92,6 +118,21 @@ public class GameManager : MonoBehaviour
             UseItem(Item.KEY);
             WallTileMap.SetTile((Vector3Int)doorPosition, OpenedDoorTile);
             return false;
+        }
+    }
+    public void TooglePause()
+    {
+        if (_pauseState)
+        {
+            _pauseState = false;
+            Time.timeScale = 1;
+            MenuManager.TogglePause(false);
+        }
+        else
+        {
+            _pauseState = true;
+            Time.timeScale = 0;
+            MenuManager.TogglePause(true);
         }
     }
     private Vector3Int? FindDoor()

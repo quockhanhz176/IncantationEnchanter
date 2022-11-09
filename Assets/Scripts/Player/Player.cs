@@ -1,88 +1,85 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    GameManager _gameManager;
+  GameManager _gameManager;
 
-    public bool IsFrozen = false;
+  public bool IsFrozen = false;
 
-    private float _frozenUntil = 0;
+  private float _frozenUntil = 0;
 
-    private SpriteRenderer _spriteRenderer;
+  private SpriteRenderer _spriteRenderer;
 
-    private GameObject _wand;
+  private GameObject _wand;
 
-    private Animator _animator;
+  private Animator _animator;
 
-    private SpriteRenderer _wandSpriteRenderer;
+  private SpriteRenderer _wandSpriteRenderer;
 
-    private Color _frozenColor = new Color(0.2470588f, 0.7333333f, 0.92549019f);
+  private Color _frozenColor = new Color(0.2470588f, 0.7333333f, 0.92549019f);
 
-    private Color _notFrozenColor = Color.white;
+  private Color _notFrozenColor = Color.white;
 
-    void Start()
+  void Start()
+  {
+    _gameManager = GameManager.Instance;
+    _spriteRenderer = GetComponent<SpriteRenderer>();
+    _wand = _gameManager.Wand;
+    _wandSpriteRenderer = _wand.GetComponent<SpriteRenderer>();
+    _animator = GetComponent<Animator>();
+  }
+
+  private void Update()
+  {
+    if (IsFrozen && _frozenUntil < Time.time)
     {
-        _gameManager = GameManager.Instance;
-        _spriteRenderer = GetComponent<SpriteRenderer>();
-        _wand = _gameManager.Wand;
-        _wandSpriteRenderer = _wand.GetComponent<SpriteRenderer>();
-        _animator = GetComponent<Animator>();
+      UnFreeze();
     }
+  }
 
-    private void Update()
+  private void OnTriggerEnter2D(Collider2D collision)
+  {
+    if (collision.gameObject.tag == "Key")
     {
-        if (IsFrozen && _frozenUntil < Time.time)
-        {
-            UnFreeze();
-        }
+      _gameManager.AddItem(GameManager.Item.KEY);
+      Destroy(collision.gameObject);
     }
+  }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+  //freeze player for an x number of second;
+  public void Freeze(float seconds)
+  {
+    Debug.Log($"Frozen, time: {seconds}");
+    IsFrozen = true;
+    _frozenUntil = Time.time + seconds;
+    if (_spriteRenderer != null)
     {
-        if (collision.gameObject.tag == "Key")
-        {
-            _gameManager.AddItem(GameManager.Item.KEY);
-            Destroy(collision.gameObject);
-        }
+      _spriteRenderer.color = _frozenColor;
     }
+    if (_wandSpriteRenderer != null)
+    {
+      _wandSpriteRenderer.color = _frozenColor;
+    }
+    if (_animator != null)
+    {
+      _animator.enabled = false;
+    }
+  }
 
-    //freeze player for an x number of second;
-    public void Freeze(float seconds)
+  private void UnFreeze()
+  {
+    IsFrozen = false;
+    if (_spriteRenderer != null)
     {
-        Debug.Log($"Frozen, time: {seconds}");
-        IsFrozen = true;
-        _frozenUntil = Time.time + seconds;
-        if (_spriteRenderer != null)
-        {
-            _spriteRenderer.color = _frozenColor;
-        }
-        if(_wandSpriteRenderer != null)
-        {
-            _wandSpriteRenderer.color = _frozenColor;
-        }
-        if(_animator != null)
-        {
-            _animator.enabled = false;
-        }
+      _spriteRenderer.color = _notFrozenColor;
     }
-
-    private void UnFreeze()
+    if (_wandSpriteRenderer != null)
     {
-        IsFrozen = false;
-        if (_spriteRenderer != null)
-        {
-            _spriteRenderer.color = _notFrozenColor;
-        }
-        if (_wandSpriteRenderer != null)
-        {
-            _wandSpriteRenderer.color = _notFrozenColor;
-        }
-        if (_animator != null)
-        {
-            _animator.enabled = true;
-        }
+      _wandSpriteRenderer.color = _notFrozenColor;
     }
+    if (_animator != null)
+    {
+      _animator.enabled = true;
+    }
+  }
 }

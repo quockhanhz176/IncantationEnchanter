@@ -10,9 +10,11 @@ public class ActiveDisplay : MonoBehaviour
 
     public GameObject OpenDoorButtonSymbol;
 
-    private GameManager _gameManager;
+    public GameObject UsingHealthPotSymbol;
 
-    private bool _canOpenDoor = false;
+    public GameObject UsingHealthPotButtonSymbol;
+
+    private GameManager _gameManager;
 
     void Start()
     {
@@ -22,21 +24,21 @@ public class ActiveDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var currentCanOpenDoor = _gameManager.CanOpenDoor();
-        if(currentCanOpenDoor != _canOpenDoor)
+        for (var i = 0; i < transform.childCount; i++)
         {
-            Debug.Log("Can open door: " + currentCanOpenDoor);
-            if (currentCanOpenDoor)
-            {
-                Instantiate(OpenDoorButtonSymbol, transform);
-                Instantiate(OpenDoorSymbol, transform);
-            }
-            else
-            {
-                Destroy(transform.GetChild(0).gameObject);
-                Destroy(transform.GetChild(1).gameObject);
-            }
-            _canOpenDoor = currentCanOpenDoor;
+            Destroy(transform.GetChild(i).gameObject);
+        }
+
+        if (_gameManager.CanOpenDoor())
+        {
+            Instantiate(OpenDoorButtonSymbol, transform);
+            Instantiate(OpenDoorSymbol, transform);
+        }
+
+        if (_gameManager.CanHeal())
+        {
+            Instantiate(UsingHealthPotButtonSymbol, transform);
+            Instantiate(UsingHealthPotSymbol, transform);
         }
     }
 

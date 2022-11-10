@@ -11,16 +11,19 @@ public class EntityOrientation : MonoBehaviour
     AIPath _aiPath;
     private Vector2 _left;
     private Vector2 _right;
+    private SpriteRenderer _spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
+        _spriteRenderer = GetComponent<SpriteRenderer>();
         var currentScale = transform.localScale;
         var flipScale = new Vector2(-currentScale.x, currentScale.y);
+
         _aiPath = GetComponent<AIPath>();
         if (!UsingDirectionalSetting)
         {
-            if (currentScale.x > 0)
+            if (!_spriteRenderer.flipX)
             {
                 _right = currentScale;
                 _left = flipScale;

@@ -121,6 +121,10 @@ public class GameManager : MonoBehaviour
             return false;
         }
     }
+    public bool CanHeal()
+    {
+        return (_playerHealth.currentHealth < _playerHealth.maximumHealth && GetItemCount(Item.HEALTH_POTION) > 0);
+    }
     public void TooglePause()
     {
         if (_pauseState)
@@ -160,6 +164,7 @@ public class GameManager : MonoBehaviour
 
     public enum Item
     {
-        KEY
+        KEY,
+        HEALTH_POTION
     }
 }
